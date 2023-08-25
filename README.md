@@ -44,10 +44,12 @@ for doc in corpus:
 If you print the tokenized_corpus. The tokenized_corpus would looke like 
 
 ```
-[
-  ['Hello', 'there', 'good', 'man!'],
-  ['It', 'is', 'quite', 'windy', 'in', 'London'],
-  ['How', 'is', 'the', 'weather', 'today?']
-]
+print(tokenized_corpus)
+
+---- result below ----
+
+[['Hello', 'there', 'good', 'man!'],
+ ['It', 'is', 'quite', 'windy', 'in', 'London'],
+ ['How', 'is', 'the', 'weather', 'today?']]
 ```
 

@@ -31,3 +31,23 @@ corpus = [
 In this example we have a courpus of 3 documents.
 
 ### Tokenize each documents in the corpus of documents
+
+
+
+```
+tokenized_corpus = []
+for doc in corpus:
+  doc_tokens = doc.split()
+  tokenized_corpus.append(doc_tokens)
+```
+
+If you print the tokenized_corpus. The tokenized_corpus would looke like 
+
+```
+[
+  ['Hello', 'there', 'good', 'man!'],
+  ['It', 'is', 'quite', 'windy', 'in', 'London'],
+  ['How', 'is', 'the', 'weather', 'today?']
+]
+```
+

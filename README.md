@@ -25,7 +25,7 @@ In this example we have a corpus of 3 documents
 ```
 corpus = [
   "Hello there good man!",
-  "It is quite windy in Londong",
+  "It is quite windy in London",
   "How is the weather today?"
 ]
 ```
@@ -55,8 +55,38 @@ print(tokenized_corpus)
  ['How', 'is', 'the', 'weather', 'today?']]
 ```
 
-### Create object from tokenized document corpus
+### Create a BM25 index from the tokenized document corpus
 
 ``` bm25 = BM250kapi(tokenized_corpus) ```
 
+### Query the BM25 index
 
+We can search for *windy London* . The document *It is quite windy in London* should be returned as the most relevant match to our search.
+
+``` 
+query = "windy London"
+tokenized_query = query.split(" ")
+
+doc_scores = bm25.get_scores(tokenized_query)
+print(doc_scores)
+
+---- result below ----
+
+[0, 0.937, 0]
+```
+
+The ```get_scores``` method returns a score of how relevant each document is to the query. A score of 1 is very relevant a score of 0 is not relevant. Notice the second sentence in our document corpus has the highest score. This makes sense given the second sentence in our corpus is *It is quite windy in London* and our query is *windy London*
+
+We can use the  ```get_top_n``` method to return the top relevant documents as opposed to just the relevancy scores the ```get_scores``` method returns
+
+``` 
+query = "windy London"
+tokenized_query = query.split(" ")
+
+doc = bm25.get_top_n(tokenized_query, tokenized_corpus, n=1)
+print(doc)
+
+---- result below ----
+
+['It is quite windy in London']
+```

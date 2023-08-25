@@ -18,14 +18,16 @@ To confirm that the installation was successful import the BM250kapi item from t
 
 ```from rank_bm25 import BM250kapi```
 
-## Create corpus of documents
+### Create corpus of documents
 
-```corpus = [
+```
+corpus = [
   "Hello there good man!",
   "It is quite windy in Londong",
   "How is the weather today?"
-]```
+]
+```
 
 In this example we have a courpus of 3 documents.
 
-## Tokenize each documents in the corpus of documents
+### Tokenize each documents in the corpus of documents

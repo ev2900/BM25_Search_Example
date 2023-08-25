@@ -14,6 +14,18 @@ The [rank_bm25](https://github.com/dorianbrown/rank_bm25) Python library makes i
 
 ```pip install rank_bm25``` or in a Juypter notebook run ```!pip install rank_bm25```
 
-To confirm that the installation was successful import the BM250kapi item from the rank_bm25 library
+To confirm that the installation was successful import the BM250kapi item from the rank_bm25 library run
 
 ```from rank_bm25 import BM250kapi```
+
+## Create corpus of documents
+
+```corpus = [
+  "Hello there good man!",
+  "It is quite windy in Londong",
+  "How is the weather today?"
+]```
+
+In this example we have a courpus of 3 documents.
+
+## Tokenize each documents in the corpus of documents

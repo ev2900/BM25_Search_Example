@@ -80,7 +80,7 @@ The ```get_scores``` method returns a score of how relevant each document is to 
 We can use the  ```get_top_n``` method to return the top relevant documents as opposed to just the relevancy scores the ```get_scores``` method returns
 
 ``` 
-doc = bm25.get_top_n(tokenized_query, tokenized_corpus, n=1)
+doc = bm25.get_top_n(tokenized_query, corpus, n=1)
 print(doc)
 
 ---- result below ----

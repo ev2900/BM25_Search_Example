@@ -16,7 +16,7 @@ The [rank_bm25](https://github.com/dorianbrown/rank_bm25) Python library makes i
 
 To confirm that the installation was successful import the BM250kapi item from the rank_bm25 library run
 
-```from rank_bm25 import BM250kapi```
+```from rank_bm25 import BM25Okapi```
 
 ### Create corpus of documents
 

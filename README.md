@@ -28,11 +28,13 @@ corpus = [
 ]
 ```
 
-In this example we have a courpus of 3 documents.
+In this example we have a corpus of 3 documents.
 
-### Tokenize each documents in the corpus of documents
+### Tokenize each document
 
+Tokenization breaks down sentences into individual words. Each work is a token. Tokenization is an important preprocessing step because BM25 operates on the level of individual tokens.
 
+The code below tokenizes each document by breaking each sentence into a list of words
 
 ```
 tokenized_corpus = []

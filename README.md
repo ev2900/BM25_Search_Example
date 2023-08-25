@@ -57,7 +57,7 @@ print(tokenized_corpus)
 
 ### Create a BM25 index from the tokenized document corpus
 
-``` bm25 = BM250kapi(tokenized_corpus) ```
+``` bm25 = BM25Okapi(tokenized_corpus) ```
 
 ### Query the BM25 index
 

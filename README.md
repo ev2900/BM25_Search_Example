@@ -1,6 +1,6 @@
 # BM25 Example
 
-<img width="85" alt="map-user" src="https://img.shields.io/badge/views-0000-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-0000-green">
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-124-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-0000-green">
 
 I based this example on the YouTube video - [How to Create a BM25 Index in Python with Rank BM25 (Search Engine)](https://www.youtube.com/watch?v=ysvpxiPAHLg). The example uses the [rank_bm25](https://github.com/dorianbrown/rank_bm25) Python library.
 
@@ -45,7 +45,7 @@ for doc in corpus:
   tokenized_corpus.append(doc_tokens)
 ```
 
-If you print the tokenized_corpus. The tokenized_corpus would looke like 
+If you print the tokenized_corpus. The tokenized_corpus would looke like
 
 ```
 print(tokenized_corpus)
@@ -65,7 +65,7 @@ print(tokenized_corpus)
 
 We can search for *windy London* . The document *It is quite windy in London* should be returned as the most relevant match to our search.
 
-``` 
+```
 query = "windy London"
 tokenized_query = query.split(" ")
 
@@ -81,7 +81,7 @@ The ```get_scores``` method returns a score of how relevant each document is to 
 
 We can use the  ```get_top_n``` method to return the top relevant documents as opposed to just the relevancy scores the ```get_scores``` method returns
 
-``` 
+```
 doc = bm25.get_top_n(tokenized_query, corpus, n=1)
 print(doc)
 

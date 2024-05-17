@@ -1,6 +1,6 @@
 # BM25 Example
 
-<img width="85" alt="map-user" src="https://img.shields.io/badge/views-787-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-414-green">
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-787-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-423-green">
 
 I based this example on the YouTube video - [How to Create a BM25 Index in Python with Rank BM25 (Search Engine)](https://www.youtube.com/watch?v=ysvpxiPAHLg). The example uses the [rank_bm25](https://github.com/dorianbrown/rank_bm25) Python library.
 
